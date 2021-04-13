@@ -29,7 +29,7 @@ class Mult : public Base {
     }
 
     string stringify() {
-	if(!Base1 && !base2)
+	if(!Base1 && !Base2)
 	{
 		return to_string(0.0) + " * " + to_string(0.0);
 	}
