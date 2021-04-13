@@ -11,7 +11,7 @@ class Mult : public Base {
     public:
 	Mult(): Base1(0), Base2(0) {}
 	Mult(Base* theBase1) : Base1(theBase1), Base2(0) {}
-	Mult(Base* theBase1, Base* theBase2) : Base1(TheBase1), Base2(theBase2) {}
+	Mult(Base* theBase1, Base* theBase2) : Base1(theBase1), Base2(theBase2) {}
 
     double evaluate(){
 	if (!Base1 && !Base2) 
