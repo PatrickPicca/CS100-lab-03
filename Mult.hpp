@@ -16,7 +16,7 @@ class Mult : public Base {
     double evaluate(){
 	if (!Base1 && !Base2) 
 	{
-		return 1.0;
+		return 0.0;
 	}
 	else if (Base1 && !Base2)
 	{
@@ -31,11 +31,11 @@ class Mult : public Base {
     string stringify() {
 	if(!Base1 && !base2)
 	{
-		return to_string(1.0) + " * " + to_string(1.0);
+		return to_string(0.0) + " * " + to_string(0.0);
 	}
 	else if(Base1 && !Base2) 
 	{
-		return Base1->stringify() + " * " + to_string(1.0);
+		return Base1->stringify() + " * " + to_string(0.0);
 	}
 	else 
 	{
