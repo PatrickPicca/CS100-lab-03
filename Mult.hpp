@@ -31,15 +31,15 @@ class Mult : public Base {
     string stringify() {
 	if(!Base1 && !Base2)
 	{
-		return to_string(0.0) + " * " + to_string(0.0);
+		return to_string(0.0) << " * " << to_string(0.0);
 	}
 	else if(Base1 && !Base2) 
 	{
-		return Base1->stringify() + " * " + to_string(0.0);
+		return Base1->stringify() << " * " << to_string(0.0);
 	}
 	else 
 	{
-		return Base1->stringify() + " * " + Base2->stringify();
+		return Base1->stringify() << " * " << Base2->stringify();
 	}
     }
 }
