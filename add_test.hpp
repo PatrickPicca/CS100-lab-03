@@ -39,6 +39,17 @@ TEST(AddTest, addition) {
     EXPECT_EQ(add5->evaluate(), -6.0;
     EXPECT_EQ(add5->stringify(), "-3.0 + -3.0");
 
+   //children 
+   op* op7 = new op(4);
+   op* op8 = new op(3);
+   op* op9 = new op(6);
+   Mult* mult1 = new Mult(op7, op8);
+   Add* add6 = new Add(op9, mult1);
+   EXPECT_EQ(add1->stringify(),
+              
+              
+              
+              
 }
 
 
