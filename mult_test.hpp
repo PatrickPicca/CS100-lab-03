@@ -52,8 +52,25 @@ TEST(MultTest, MultEvaluateNegPosOps){
      EXPECT_EQ(mult->stringify(), "-3.0 * 4.0");
 }
 
+TEST(MultTest, MultEvaluateChildren){
+   op* op1 = new op(7);
+   op* op2 = new op(2);
+   op* op3 = new op(3);
+   Add* add = new Add(op1, op2);
+   Mult* mult = new Mult(op3, add);
+   EXPECT_EQ(mult->evaluate(), 27.0);        
+   EXPECT_EQ(add->stringify(), "3.0 * (7.0 + 2.0)");
+}
 
-
+   TEST(MultTest, MultEvaluateChildrenNeg){
+   op* op1 = new op(8);
+   op* op2 = new op(-5);
+   op* op3 = new op(5);
+   Add* add = new Add(op1, op2);
+   Mult* mult = new Mult(op3, add);
+   EXPECT_EQ(mult->evaluate(), 15.0);        
+   EXPECT_EQ(add->stringify(), "5.0 * (8.0 + -5.0)");
+}
 
 
 
