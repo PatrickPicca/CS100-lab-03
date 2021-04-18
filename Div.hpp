@@ -35,5 +35,26 @@ class Div : public Base {
 	        }
         }
     }
+    string stringify(){
+	string asnwer;
+	if(!Base1 && !Base2) {
+		answer = to_string(1.0) + " / " +  to_string(1.0);
+	}
+        else if(Base1 && !Base2) {
+		answer =  Base1->stringify() + " / " + to_string(1.0);
+	}       
+	else 
+	{
+		if(Base2->evaluate() == 0) 
+		{
+			answer =  "Undefined";
+		}
+		else 
+		{
+			answer =  Base1->stringify() +  " / " +  Base2->stringify();
+	        }
+        }
+	return answer;
+    }
 };
 #endif
