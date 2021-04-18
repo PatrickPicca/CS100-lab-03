@@ -69,7 +69,25 @@ TEST(DivTest, DivEvaluateByZero) {
       EXPECT_EQ(div->stringify(), "Undefined");
  }
 
+TEST(DivTest, DivEvaluateChildren){
+   op* op1 = new op(5);
+   op* op2 = new op(5);
+   op* op3 = new op(2);
+   Add* add = new Add(op1, op2);
+   Div* div = new Div(add, op3);
+   EXPECT_EQ(mult->evaluate(), 5.0);        
+   EXPECT_EQ(add->stringify(), "5.0 + 5.0 / 2.0");
+}
 
+   TEST(DivTest, DivEvaluateChildrenNeg){
+   op* op1 = new op(8);
+   op* op2 = new op(-2);
+   op* op3 = new op(12);
+   Add* add = new Add(op1, op2);
+   Div* div = new Div(op3, add);
+   EXPECT_EQ(div->evaluate(), 2.0);        
+   EXPECT_EQ(add->stringify(), "12.0 / 8.0 + -2.0");
+}
 
  #endif //__DIV_TEST_HPP__
 
