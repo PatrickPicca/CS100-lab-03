@@ -57,7 +57,7 @@ TEST(AddTest, addition) {
    EXPECT_EQ(mult1->evaluate(), -4.0);        
    EXPECT_EQ(add1->stringify(), "6.0 + 5.0 * -2.0");           
               
-              
+             
               
 }
 
