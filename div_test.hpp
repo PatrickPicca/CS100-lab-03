@@ -61,6 +61,13 @@ TEST(DivTest, DivEvaluateNegPosOps) {
       EXPECT_EQ(div->stringify(), "-10.0 / 2.0");
  }
 
+TEST(DivTest, DivEvaluateByZero) {
+      Op* op1 = new Op(7);
+      Op* op2 = new Op(0);
+      Div* div = new Div(op1, op2);
+      EXPECT_EQ(div->evaluate(), -1);
+      EXPECT_EQ(div->stringify(), "Undefined");
+ }
 
 
 
