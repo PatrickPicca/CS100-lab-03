@@ -46,6 +46,6 @@ class Pow : public Base {
 	}
 	return answer;
     }
-}
+};
 
 #endif
