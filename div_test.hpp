@@ -70,9 +70,9 @@ TEST(DivTest, DivEvaluateByZero) {
  }
 
 TEST(DivTest, DivEvaluateChildren){
-   Op* op1 = new op(5);
-   Op* op2 = new op(5);
-   Op* op3 = new op(2);
+   Op* op1 = new Op(5);
+   Op* op2 = new Op(5);
+   Op* op3 = new Op(2);
    Add* add = new Add(op1, op2);
    Div* div = new Div(add, op3);
    EXPECT_EQ(mult->evaluate(), 5.0);        
@@ -80,9 +80,9 @@ TEST(DivTest, DivEvaluateChildren){
 }
 
    TEST(DivTest, DivEvaluateChildrenNeg){
-   Op* op1 = new op(8);
-   Op* op2 = new op(-2);
-   Op* op3 = new op(12);
+   Op* op1 = new Op(8);
+   Op* op2 = new Op(-2);
+   Op* op3 = new Op(12);
    Add* add = new Add(op1, op2);
    Div* div = new Div(op3, add);
    EXPECT_EQ(div->evaluate(), 2.0);        
