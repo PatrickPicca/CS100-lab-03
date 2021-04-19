@@ -5,7 +5,7 @@
 
 #include "Sub.hpp"
 #include "Add.hpp"
-#inclide "Mult.hpp"
+#include "Mult.hpp"
 
 TEST(SubTest, subtraction) {
      //2 operators
