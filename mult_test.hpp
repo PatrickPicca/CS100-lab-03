@@ -53,9 +53,9 @@ TEST(MultTest, MultEvaluateNegPosOps){
 }
 
 TEST(MultTest, MultEvaluateChildren){
-   op* op1 = new op(7);
-   op* op2 = new op(2);
-   op* op3 = new op(3);
+   Op* op1 = new op(7);
+   Op* op2 = new op(2);
+   Op* op3 = new op(3);
    Add* add = new Add(op1, op2);
    Mult* mult = new Mult(op3, add);
    EXPECT_EQ(mult->evaluate(), 27.0);        
@@ -63,9 +63,9 @@ TEST(MultTest, MultEvaluateChildren){
 }
 
    TEST(MultTest, MultEvaluateChildrenNeg){
-   op* op1 = new op(8);
-   op* op2 = new op(-5);
-   op* op3 = new op(5);
+   Op* op1 = new op(8);
+   Op* op2 = new op(-5);
+   Op* op3 = new op(5);
    Add* add = new Add(op1, op2);
    Mult* mult = new Mult(op3, add);
    EXPECT_EQ(mult->evaluate(), 15.0);        
