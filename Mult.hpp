@@ -44,5 +44,5 @@ class Mult : public Base {
 	}
 	return answer;
     }
-}
+};
 #endif
