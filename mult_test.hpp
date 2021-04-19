@@ -4,6 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "Mult.hpp"
+#include "Add.hpp"
 
 
 TEST(MultTest, MultEvaluateNonZero) {
