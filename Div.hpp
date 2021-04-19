@@ -36,7 +36,7 @@ class Div : public Base {
         }
     }
     string stringify(){
-	string asnwer;
+	string answer;
 	if(!Base1 && !Base2) {
 		answer = to_string(1.0) + " / " +  to_string(1.0);
 	}
