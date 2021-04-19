@@ -44,5 +44,5 @@ class Sub : public Base {
 	}
 	return answer;
     }
-}
+};
 #endif
