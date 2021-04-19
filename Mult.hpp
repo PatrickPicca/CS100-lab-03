@@ -36,11 +36,11 @@ class Mult : public Base {
 	}
 	else if(Base1 && !Base2) 
 	{
-		answer =  Base1->stringify() << " * " << to_string(0.0);
+		answer =  Base1->stringify() + " * " + to_string(0.0);
 	}
 	else 
 	{
-		answer =  Base1->stringify() << " * " << Base2->stringify();
+		answer =  Base1->stringify() + " * " + Base2->stringify();
 	}
 	return answer;
     }
