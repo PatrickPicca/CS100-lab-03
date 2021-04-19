@@ -4,6 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "Div.hpp"
+#include "Add.hpp"
 
 
  TEST(DivTest, DivEvaluateNonZero) {
