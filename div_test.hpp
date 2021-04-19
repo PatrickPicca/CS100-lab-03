@@ -75,7 +75,7 @@ TEST(DivTest, DivEvaluateChildren){
    Op* op3 = new Op(2);
    Add* add = new Add(op1, op2);
    Div* div = new Div(add, op3);
-   EXPECT_EQ(mult->evaluate(), 5.0);        
+   EXPECT_EQ(div->evaluate(), 5.0);        
    EXPECT_EQ(add->stringify(), "5.0 + 5.0 / 2.0");
 }
 
