@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 
 #include "Add.hpp"
-
+#include "Mult.hpp"
 
 TEST(AddTest, addition) {
     //2 operators
