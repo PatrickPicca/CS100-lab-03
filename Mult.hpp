@@ -32,7 +32,7 @@ class Mult : public Base {
 	string answer;
 	if(!Base1 && !Base2)
 	{
-		answer =  to_string(0.0) << " * " << to_string(0.0);
+		answer =  to_string(0.0) + " * " + to_string(0.0);
 	}
 	else if(Base1 && !Base2) 
 	{
