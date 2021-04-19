@@ -4,6 +4,8 @@
 #include "gtest/gtest.h"
 
 #include "Sub.hpp"
+#include "Add.hpp"
+#inclide "Mult.hpp"
 
 TEST(SubTest, subtraction) {
      //2 operators
