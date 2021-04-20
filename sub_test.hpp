@@ -37,7 +37,7 @@ TEST(SubTest, subtraction) {
      Op* op5 = new Op(-3);
      Op* op6 = new Op(-2);
      Sub* sub5 = new Sub(op5, op6);
-     EXPECT_EQ(sub5->evaluate(), -1.0;
+     EXPECT_EQ(sub5->evaluate(), -1.0);
      EXPECT_EQ(sub5->stringify(), "(-3.0 - -2.0)");
                
      //children 
