@@ -24,7 +24,7 @@ TEST(SubTest, subtraction) {
      //0 operator
      Sub* sub3 = new Sub();
      EXPECT_EQ(sub3->evaluate(), 0.0);
-     EXPECT_EQ(sub3->stringify(), "(0.000000 - 0.000000)");
+     EXPECT_EQ(sub3->stringify(), "(0.00 - 0.00)");
 
 
      // negative operator (1)
