@@ -17,8 +17,8 @@
  TEST(PowTest, PowEvaluateOneOp) {
        Op* op1 = new Op(3);
        Pow* pow = new Pow(op1);
-       EXPECT_EQ(pow->evaluate(), 3.0);
-       EXPECT_EQ(pow->stringify(), "(3.00 ** 1.00)");
+       EXPECT_EQ(pow->evaluate(), 1.0);
+       EXPECT_EQ(pow->stringify(), "(3.00 ** 0.00)");
   }
 
 TEST(PowTest, PowEvaluateZeroOp) {
