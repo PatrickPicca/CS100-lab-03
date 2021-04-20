@@ -35,10 +35,12 @@ class Mult : public Base {
     string stringify() {
 	string answer;
 	ostringstream ss;
+	ostringstream ss2;
 	ss << setprecision(3)<< showpoint << 1.00;
+	ss2 << setprecision(3)<< showpoint << 0.00;
 	if(!Base1 && !Base2)
 	{
-		answer =  "(" + ss.str() + " * " + ss.str() + ")";
+		answer =  "(" + ss2.str() + " * " + ss.str() + ")";
 	}
 	else if(Base1 && !Base2) 
 	{
