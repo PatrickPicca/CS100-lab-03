@@ -5,6 +5,7 @@
 
 #include "Sub.hpp"
 
+
 TEST(SubTest, subtraction) {
      //2 operators
      op* op1 = new op(5);

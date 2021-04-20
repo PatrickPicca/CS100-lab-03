@@ -44,8 +44,6 @@ TEST(PowTest, PowEvaluateNegOps2) {
   }
 
 
-
-
 #endif //__POW_TEST_HPP__
 
 
