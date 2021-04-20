@@ -16,7 +16,7 @@ class Mult : public Base {
     double evaluate(){
 	if (!Base1 && !Base2) 
 	{
-		return 0.0;
+		return 0.00;
 	}
 	else if (Base1 && !Base2)
 	{
