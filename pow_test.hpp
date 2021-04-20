@@ -32,7 +32,7 @@ TEST(PowTest, PowEvaluateNegOps) {
        Op* op2 = new Op(2);
        Pow* pow = new Pow(op1, op2);
        EXPECT_EQ(pow->evaluate(), 100.0);
-       EXPECT_EQ(pow->stringify(), "(-10.00 ** 2.00)");
+       EXPECT_EQ(pow->stringify(), "(-10.0 ** 2.00)");
   }
 
 TEST(PowTest, PowEvaluateNegOps2) {
