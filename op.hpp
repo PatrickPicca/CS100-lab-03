@@ -2,6 +2,9 @@
 #define __OP_HPP__
 
 #include "base.hpp"
+#include "iostream"
+#include "sstream"
+#include <iomanip>
 #include <string>
 using namespace std;
 
@@ -12,7 +15,11 @@ class Op : public Base {
 	Op() : number(0) {}
         Op(double Number) : number(Number) {}
         virtual double evaluate() { return number; }
-        virtual std::string stringify() { return to_string(number); }
+        virtual std::string stringify() { 
+		ostringstream ss;
+		ss << setprecision(1) << number;
+		return ss.str(); 
+	}
 };
 
 #endif //__OP_HPP__
