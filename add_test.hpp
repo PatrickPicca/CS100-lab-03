@@ -54,7 +54,7 @@ TEST(AddTest, addition) {
    Op* op12 = new Op(6);
    Mult* mult2 = new Mult(op10, op11);
    Add* add7 = new Add(op12, mult2);
-   EXPECT_EQ(mult2->evaluate(), -4.00);        
+   EXPECT_EQ(add7->evaluate(), -4.00);        
    EXPECT_EQ(add7->stringify(), "(6.00 + (5.00 * -2.00))");           
               
              
