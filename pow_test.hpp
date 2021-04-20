@@ -11,20 +11,20 @@
        Op* op2 = new Op(2);
        Pow* pow = new Pow(op1, op2);
        EXPECT_EQ(pow->evaluate(), 16.0);
-       EXPECT_EQ(pow->stringify(), "(4.0 ** 2.0)");
+       EXPECT_EQ(pow->stringify(), "(4.00 ** 2.00)");
   }
 
  TEST(PowTest, PowEvaluateOneOp) {
        Op* op1 = new Op(3);
        Pow* pow = new Pow(op1);
        EXPECT_EQ(pow->evaluate(), 3.0);
-       EXPECT_EQ(pow->stringify(), "(3.0 ** 1.0)");
+       EXPECT_EQ(pow->stringify(), "(3.00 ** 1.00)");
   }
 
 TEST(PowTest, PowEvaluateZeroOp) {
        Op* op1 = new Op();
        EXPECT_EQ(op1->evaluate(), 0.0);
-       EXPECT_EQ(op1->stringify(), "(0.0 ** 1.0)");
+       EXPECT_EQ(op1->stringify(), "(0.00 ** 1.00)");
   }
 
 TEST(PowTest, PowEvaluateNegOps) {
@@ -32,7 +32,7 @@ TEST(PowTest, PowEvaluateNegOps) {
        Op* op2 = new Op(2);
        Pow* pow = new Pow(op1, op2);
        EXPECT_EQ(pow->evaluate(), 100.0);
-       EXPECT_EQ(pow->stringify(), "(-10.0 ** 2.0)");
+       EXPECT_EQ(pow->stringify(), "(-10.00 ** 2.00)");
   }
 
 TEST(PowTest, PowEvaluateNegOps2) {
@@ -40,7 +40,7 @@ TEST(PowTest, PowEvaluateNegOps2) {
        Op* op2 = new Op(-1);
        Pow* pow = new Pow(op1, op2);
        EXPECT_EQ(pow->evaluate(), -0.1);
-       EXPECT_EQ(pow->stringify(), "(-10.0 ** -1.0)");
+       EXPECT_EQ(pow->stringify(), "(-10.0 ** -1.00)");
   }
 
 
