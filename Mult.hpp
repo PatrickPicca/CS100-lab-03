@@ -40,7 +40,7 @@ class Mult : public Base {
 	}
 	else 
 	{
-		answer =  "(" + Base1->stringify() + " * " + Base2->stringify() ")";
+		answer =  "(" + Base1->stringify() + " * " + Base2->stringify() + ")";
 	}
 	return answer;
     }
