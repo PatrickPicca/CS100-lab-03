@@ -87,7 +87,7 @@ TEST(DivTest, DivEvaluateChildren){
    Add* add = new Add(op1, op2);
    Div* div = new Div(op3, add);
    EXPECT_EQ(div->evaluate(), 2.0);        
-   EXPECT_EQ(add->stringify(), "(12.0 / (8.0 + -2.0))");
+   EXPECT_EQ(div->stringify(), "(12.0 / (8.0 + -2.0))");
 }
 
  #endif //__DIV_TEST_HPP__
