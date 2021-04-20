@@ -46,7 +46,7 @@ TEST(SubTest, subtraction) {
    Op* op9 = new Op(5);
    Mult* mult = new Mult(op7, op8);
    Sub* sub6 = new Sub(op9, mult);
-   EXPECT_EQ(mult->evaluate(), -35.0);        
+   EXPECT_EQ(sub6->evaluate(), -35.0);        
    EXPECT_EQ(sub6->stringify(), "(5.00 - (5.00 * 8.00))");
                
    
