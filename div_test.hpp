@@ -32,10 +32,10 @@
       EXPECT_EQ(div->stringify(), "(3.00 / 1.00)");
  }
 
- TEST(DivTest, DivEvaluateZeroOp) {
+ TEST(DivTest, DivEvaluateNothingPassed) {
       Div* div = new Div();
-      EXPECT_EQ(div->evaluate(), 0.0);
-      EXPECT_EQ(div->stringify(), "(0.00 / 1.00)");
+      EXPECT_EQ(div->evaluate(), 1.0);
+      EXPECT_EQ(div->stringify(), "(1.00 / 1.00)");
  }
 
 
