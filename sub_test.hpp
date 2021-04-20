@@ -48,7 +48,7 @@ TEST(SubTest, subtraction) {
    Mult* mult = new Mult(op7, op8);
    Sub* sub6 = new Sub(op9, mult);
    EXPECT_EQ(mult->evaluate(), -35.0);        
-   EXPECT_EQ(sub6->stringify(), "5.0 - (5.0 * 8.0)");
+   EXPECT_EQ(sub6->stringify(), "5.0 - 5.0 * 8.0");
                
    
     //children w/ neg
@@ -58,7 +58,7 @@ TEST(SubTest, subtraction) {
    Add* add = new Add(op10, op11);
    Sub* sub7 = new Sub(op12, add);
    EXPECT_EQ(add->evaluate(), -3.0);        
-   EXPECT_EQ(sub7->stringify(), "-4.0 - (-3.0 + 2.0)");
+   EXPECT_EQ(sub7->stringify(), "-4.0 - -3.0 + 2.0");
 
 
  }
