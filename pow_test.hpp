@@ -21,10 +21,10 @@
        EXPECT_EQ(pow->stringify(), "(3.00 ** 1.00)");
   }
 
-TEST(PowTest, PowEvaluateZeroOp) {
+TEST(PowTest, PowEvaluateNothingPassed) {
        Pow* pow = new Pow(); 
        EXPECT_EQ(pow->evaluate(), 1.0);
-       EXPECT_EQ(pow->stringify(), "(0.00 ** 0.00)");
+       EXPECT_EQ(pow->stringify(), "(1.00 ** 1.00)");
   }
 
 
