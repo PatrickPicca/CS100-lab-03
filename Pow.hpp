@@ -37,7 +37,7 @@ class Pow : public Base {
     string stringify() {
 	string answer;
 	ostringstream ss;
-	ss << setprecision(3)<< showpoint << 0.00;
+	ss << setprecision(3)<< showpoint << 1.00;
         if (Base1 && Base2) 
 	{ 
 		answer = "(" + Base1->stringify() +  " ** " +  Base2->stringify() + ")";
