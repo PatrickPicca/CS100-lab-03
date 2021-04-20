@@ -44,11 +44,11 @@ class Pow : public Base {
 	}
         else if (Base1 && !Base2) 
 	{ 
-		answer = "(" + Base1->stringify() + " ** " + ss.str + ")";
+		answer = "("  + Base1->stringify() + " ** " + ss.str() + ")";
 	}
         else 
 	{ 
-		answer = "(" + ss.str + " ** " + ss.str + ")"; 
+		answer = "(" + ss.str() + " ** " + ss.str() + ")"; 
 	}
 	return answer;
     }
