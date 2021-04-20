@@ -61,7 +61,7 @@ TEST(MultTest, MultEvaluateChildren){
    Add* add = new Add(op1, op2);
    Mult* mult = new Mult(op3, add);
    EXPECT_EQ(mult->evaluate(), 27.0);        
-   EXPECT_EQ(add->stringify(), "(3.00 * (7.00 + 2.00))");
+   EXPECT_EQ(mult->stringify(), "(3.00 * (7.00 + 2.00))");
 }
 
    TEST(MultTest, MultEvaluateChildrenNeg){
@@ -71,7 +71,7 @@ TEST(MultTest, MultEvaluateChildren){
    Add* add = new Add(op1, op2);
    Mult* mult = new Mult(op3, add);
    EXPECT_EQ(mult->evaluate(), 15.00);        
-   EXPECT_EQ(add->stringify(), "(5.00 * (8.00 + -5.00))");
+   EXPECT_EQ(mult->stringify(), "(5.00 * (8.00 + -5.00))");
 }
 
 
