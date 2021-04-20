@@ -35,15 +35,15 @@ class Add : public Base {
 	string answer;
 	if (Base1 && Base2) 
 	{ 
-		answer =  Base1->stringify() +  " + " + Base2->stringify();
+		answer =  "(" + Base1->stringify() +  " + " + Base2->stringify() + ")";
 	}
 	else if (Base1 && !Base2) 
 	{ 
-		answer =  Base1->stringify() + " + " + to_string(0.0);
+		answer =  "(" + Base1->stringify() + " + " + to_string(0.0) + ")";
 	}
 	else 
 	{ 
-		answer =  to_string(0.0)  + " + " + to_string(0.0); 
+		answer =  "(" + to_string(0.0)  + " + " + to_string(0.0) + ")"; 
 	}
 	return answer;
     }
