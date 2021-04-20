@@ -21,7 +21,7 @@ class Div : public Base {
     double evaluate(){
 	if(!Base1 && !Base2)
 	{ 
-		return 0.0;
+		return 1.0;
 	} 
         else if(Base1 && !Base2)
 	{
