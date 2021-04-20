@@ -17,7 +17,7 @@ class Op : public Base {
         virtual double evaluate() { return number; }
         virtual std::string stringify() { 
 		ostringstream ss;
-		ss << setprecision(2)<< showpoint << number;
+		ss << setprecision(3)<< showpoint << number;
 		return ss.str(); 
 	}
 };
