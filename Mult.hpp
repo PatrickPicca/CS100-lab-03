@@ -2,6 +2,10 @@
 #define __MULT_HPP__
 #include "base.hpp"
 #include <string>
+#include "iostream"
+#include "sstream"
+#include <iomanip>
+
 using namespace std;
 
 class Mult : public Base {
@@ -30,13 +34,15 @@ class Mult : public Base {
 
     string stringify() {
 	string answer;
+	ostringstream ss;
+	ss << setprecision(3)<< showpoint << 0.00;
 	if(!Base1 && !Base2)
 	{
-		answer =  "(" + to_string(0.0) + " * " + to_string(0.0) + ")";
+		answer =  "(" + ss.str() + " * " + ss.str() + ")";
 	}
 	else if(Base1 && !Base2) 
 	{
-		answer =  "(" + Base1->stringify() + " * " + to_string(0.0) + ")";
+		answer =  "(" + Base1->stringify() + " * " + ss.str() + ")";
 	}
 	else 
 	{
