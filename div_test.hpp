@@ -34,8 +34,8 @@
 
  TEST(DivTest, DivEvaluateZeroOp) {
       Div* div = new Div();
-      EXPECT_EQ(op1->evaluate(), 0.0);
-      EXPECT_EQ(op1->stringify(), "(0.00 / 1.00)");
+      EXPECT_EQ(div->evaluate(), 0.0);
+      EXPECT_EQ(div->stringify(), "(0.00 / 1.00)");
  }
 
 
