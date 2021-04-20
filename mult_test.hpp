@@ -24,10 +24,10 @@ TEST(MultTest, MultEvaluateOneOp) {
      EXPECT_EQ(mult->stringify(), "(3.00 * 1.00)");
 }
 
-TEST(MultTest, MultEvaluateZeroOp) {
+TEST(MultTest, MultEvaluateNothingPassed) {
      Mult* mult = new Mult();
-     EXPECT_EQ(mult->evaluate(), 0.0);
-     EXPECT_EQ(mult->stringify(), "(0.00 * 1.00)");
+     EXPECT_EQ(mult->evaluate(), 1.0);
+     EXPECT_EQ(mult->stringify(), "(1.00 * 1.00)");
 }
 
 TEST(MultTest, MultEvaluateNegOp) {
