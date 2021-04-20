@@ -25,7 +25,7 @@ TEST(MultTest, MultEvaluateOneOp) {
 }
 
 TEST(MultTest, MultEvaluateZeroOp) {
-     Op* op1 = new Op();
+     Mult* mult = new Mult();
      EXPECT_EQ(op1->evaluate(), 0.0);
      EXPECT_EQ(op1->stringify(), "(0.00 * 1.00)");
 }
