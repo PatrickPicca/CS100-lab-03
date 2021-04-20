@@ -22,11 +22,10 @@
   }
 
 TEST(PowTest, PowEvaluateZeroOp) {
-       Op* op1 = new Op();
-       EXPECT_EQ(op1->evaluate(), 0.0);
+       Pow* pow = new Pow(); 
+       EXPECT_EQ(op1->evaluate(), 1.0);
        EXPECT_EQ(op1->stringify(), "(0.00 ** 0.00)");
   }
-
 
 
 TEST(PowTest, PowEvaluateNegOps) {
